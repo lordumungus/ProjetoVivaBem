@@ -19,7 +19,7 @@ import javax.swing.DefaultListModel;
 import javax.swing.DefaultComboBoxModel;
 
 
-
+//Tela de Agendar Consultas
 public class Agenda extends javax.swing.JFrame 
 {
     public String  nome, nome_medico, data, horario, descricao, dia, mes, ano;
@@ -227,7 +227,7 @@ public class Agenda extends javax.swing.JFrame
    
    
  
-     
+    //ComboBox que pega dados Pacientes 
     private void preencherComboBoxPacientes() 
     {
         
@@ -257,7 +257,7 @@ public class Agenda extends javax.swing.JFrame
         JOptionPane.showMessageDialog(null, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
     }
     }
-
+    //ComboBox que pega dados Médicos
     private void preencherComboBoxMedico() 
     {
         
@@ -432,7 +432,7 @@ public class Agenda extends javax.swing.JFrame
         ano = (String) boxAno.getSelectedItem();                
                     
                      
-                     
+       //Salva dados na Tabela Consultas              
         try
         {
 	Class.forName("com.mysql.cj.jdbc.Driver");
@@ -525,7 +525,7 @@ public class Agenda extends javax.swing.JFrame
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
-
+    //Icone
     private void setIcon() {
         URL url = this.getClass().getResource("/Imagens/heart.png");
          Image imgTitulo = Toolkit.getDefaultToolkit().getImage(url);

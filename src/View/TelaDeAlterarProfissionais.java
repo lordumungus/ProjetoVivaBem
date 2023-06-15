@@ -31,6 +31,7 @@ public class TelaDeAlterarProfissionais extends javax.swing.JFrame {
 
     /**
      * Creates new form CadastroPaciente
+     * Tela de Alterar Profissionais
      */
     public TelaDeAlterarProfissionais() {
         initComponents();
@@ -180,7 +181,7 @@ public class TelaDeAlterarProfissionais extends javax.swing.JFrame {
     private void camponovoEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_camponovoEnderecoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_camponovoEnderecoActionPerformed
-
+    //Botão que chama os Dados dos Funcionários
     private void btMostrarPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMostrarPacientesActionPerformed
      
 				
@@ -231,14 +232,14 @@ public class TelaDeAlterarProfissionais extends javax.swing.JFrame {
 	}
        
     }//GEN-LAST:event_btMostrarPacientesActionPerformed
-
+    //Botão Voltar
     private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
             dispose();  
         
         
         
     }//GEN-LAST:event_btVoltarActionPerformed
-
+    //Botão que altera dados no cadastro_funcionários
     private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
     int y;
          UIManager.put("OptionPane.cancelButtonText", "Cancelar"); 
@@ -287,7 +288,7 @@ public class TelaDeAlterarProfissionais extends javax.swing.JFrame {
 	   JOptionPane.showMessageDialog(null,ex.getMessage(),"Erro",JOptionPane.INFORMATION_MESSAGE);
 	}}
     }//GEN-LAST:event_btAlterarActionPerformed
-
+    //Botão que chama a tela de Deletar
     private void btDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDeleteActionPerformed
  DeleteFuncionarios deletar = new DeleteFuncionarios();
  deletar.show();

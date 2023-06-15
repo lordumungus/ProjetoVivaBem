@@ -7,7 +7,7 @@ import java.net.URL;
 import java.sql.*;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-
+//Tela de Alterar Cadastro Paciente
 public class Alterar extends javax.swing.JFrame {
 
     private String nomeAtual, enderecoAtual, telefoneAtual, emailAtual;

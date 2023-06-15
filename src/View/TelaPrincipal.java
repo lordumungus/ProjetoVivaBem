@@ -58,7 +58,7 @@ public String Nome;
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("VivaBem");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -264,7 +264,7 @@ public String Nome;
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    //Botão Voltar para o Login
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          int x;
          UIManager.put("OptionPane.cancelButtonText", "Cancelar"); 
@@ -282,7 +282,7 @@ public String Nome;
 	}
         
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    //Botão dados Consulta
     private void btConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btConsultaActionPerformed
         DadosConsultas dados = new DadosConsultas();
         dados.setLocationRelativeTo(null);
@@ -295,7 +295,7 @@ public String Nome;
        
        
     }//GEN-LAST:event_btUserActionPerformed
-
+    //Botão Dados Médicos
     private void btProfissionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btProfissionalActionPerformed
      View.DadosMedicos medicos = new DadosMedicos();
      medicos.setLocationRelativeTo(null);
@@ -304,72 +304,72 @@ public String Nome;
      
                       
     }//GEN-LAST:event_btProfissionalActionPerformed
-
+    //Opção do Menu que chama Dados Medicos
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         DadosMedicos dados = new DadosMedicos();
         dados.setLocationRelativeTo(null);
         dados.show();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
+    //Opção do Menu que chama a Tela Relatório Médico
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         RelatorioMedicos dados = new RelatorioMedicos();
         dados.setLocationRelativeTo(null);
         dados.show();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
-
+    // Opção que chama a Tela Dados Pessoas
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         RelatorioPessoas dados = new RelatorioPessoas();
         dados.setLocationRelativeTo(null);
         dados.show();
     }//GEN-LAST:event_jMenuItem3ActionPerformed
-
+    //Botão que chama Cadastro paciente
     private void btPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPacientesActionPerformed
         CadastroPaciente paciente = new CadastroPaciente();
         paciente.setLocationRelativeTo(null);
         paciente.show();
     }//GEN-LAST:event_btPacientesActionPerformed
-
+    //Botão que chama a Agenda Marcar Consultas
     private void btMedicos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMedicos1ActionPerformed
         Agenda agenda = new Agenda();
         agenda.setLocationRelativeTo(null);
         agenda.show();
     }//GEN-LAST:event_btMedicos1ActionPerformed
-
+    //Botão que chama a tela Mostrar Paciente
     private void btPesquisaPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisaPacienteActionPerformed
         MostarPaciente mostrar = new MostarPaciente();
         mostrar.setLocationRelativeTo(null);
         mostrar.show();
     }//GEN-LAST:event_btPesquisaPacienteActionPerformed
-
+    //Mudança do Texto do Botão bt.User com a String salva na tela de Login "teste"
     private void btUserPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_btUserPropertyChange
            btUser.setText(View.Login.teste);
 
      }//GEN-LAST:event_btUserPropertyChange
-
+    //Botão que chama a Tela Cadastro de Funcionários
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         CadastroFuncionarios funcionario = new CadastroFuncionarios();
         funcionario.setLocationRelativeTo(null);
         funcionario.show();
     }//GEN-LAST:event_jMenuItem5ActionPerformed
-
+    //Botão que chama a tela Cadastro de Médicos
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         CadastroDeProfissionais medico = new CadastroDeProfissionais();
         medico.setLocationRelativeTo(null);
         medico.show();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
-
+    //Botão que chama a Tela Alterar paciente
     private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
        TelaDeAlterar tela = new TelaDeAlterar();
        tela.setLocationRelativeTo(null);
        tela.show();
     }//GEN-LAST:event_btAlterarActionPerformed
-
+    //Botão que chama a tela Alterar médicos
     private void btAlterarMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarMedicosActionPerformed
         TelaDeAlterarMedicos medicos = new TelaDeAlterarMedicos();
         medicos.setLocationRelativeTo(null);
         medicos.show();
     }//GEN-LAST:event_btAlterarMedicosActionPerformed
-
+    //Botão que chama a tela alterar profissionais
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         TelaDeAlterarProfissionais tela = new TelaDeAlterarProfissionais();
         tela.setLocationRelativeTo(null);
@@ -403,7 +403,7 @@ public String Nome;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     // End of variables declaration//GEN-END:variables
-
+    //Método que chama o icone "heart.png"
     private void setIconImage() {
         URL url = this.getClass().getResource("/Imagens/heart.png");
          Image imgTitulo = Toolkit.getDefaultToolkit().getImage(url);

@@ -52,7 +52,7 @@ public class TelaPrincipalMedico extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("VivaBem ");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -160,7 +160,7 @@ public class TelaPrincipalMedico extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
-
+//Botão que chama a tela Principal
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         int x;
         UIManager.put("OptionPane.cancelButtonText", "Cancelar"); 
@@ -182,25 +182,25 @@ public class TelaPrincipalMedico extends javax.swing.JFrame {
     private void btUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btUserActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btUserActionPerformed
-
+    //Botão que chama a tela Relatório Pessoas
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         RelatorioPessoas novo = new RelatorioPessoas();
         novo.setLocationRelativeTo(null);
         novo.show();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
+    //Botão que chama a tela Dados da Consulta
     private void btConsultarDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btConsultarDadosActionPerformed
        DadosConsultasMedico dados = new DadosConsultasMedico();
        dados.setLocationRelativeTo(null);
        dados.show();    
     }//GEN-LAST:event_btConsultarDadosActionPerformed
-
+    //Botão que chama Relatório Pessoas
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         RelatorioPessoas tela = new RelatorioPessoas();
         tela.setLocationRelativeTo(null);
         tela.show();
     }//GEN-LAST:event_jButton4ActionPerformed
-
+    //Botão User que chama a variavel teste string da tela de Login
     private void btUserPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_btUserPropertyChange
        btUser.setText(View.Login.teste);
     }//GEN-LAST:event_btUserPropertyChange
@@ -224,7 +224,7 @@ public class TelaPrincipalMedico extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
-
+    //Método que chama Icone do Sistema "Heart"
     private void setIconImage() {
          URL url = this.getClass().getResource("/Imagens/heart.png");
          Image imgTitulo = Toolkit.getDefaultToolkit().getImage(url);

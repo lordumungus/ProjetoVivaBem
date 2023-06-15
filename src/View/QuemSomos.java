@@ -11,6 +11,7 @@ import java.net.URL;
 /**
  *
  * @author User
+ * Tela de Boas Vindas
  */
 public class QuemSomos extends javax.swing.JFrame {
 

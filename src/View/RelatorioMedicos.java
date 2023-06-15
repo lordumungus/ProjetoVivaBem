@@ -15,7 +15,7 @@ import java.net.URL;
 import java.sql.*;
 import java.awt.Color;
 
-
+//Classe que chama a Tabela Relatório Médicos
 public class RelatorioMedicos extends JFrame
 {
    private DefaultTableModel modelo;

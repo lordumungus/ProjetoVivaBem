@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
 import java.sql.*;
-
+//Tela de Deletar Medicos
 public class DeleteMedico extends JFrame {
     private Connection con;
     private DefaultTableModel tableModel;

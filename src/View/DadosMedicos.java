@@ -17,6 +17,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author User
+ * Dados Médicos
  */
 public class DadosMedicos extends javax.swing.JFrame {
 

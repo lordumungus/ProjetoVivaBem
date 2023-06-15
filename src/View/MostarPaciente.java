@@ -17,6 +17,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author User
+ * Tela Mostrar pacientes
  */
 public class MostarPaciente extends javax.swing.JFrame {
     public String nome, endereco, data, cpf,  telefone, email, senha;
@@ -163,7 +164,7 @@ public class MostarPaciente extends javax.swing.JFrame {
     private void campoEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoEnderecoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoEnderecoActionPerformed
-
+    //Botão que chama dados do cadastro_paciente
     private void btMostrarPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMostrarPacientesActionPerformed
      int status;
 				
@@ -224,7 +225,7 @@ public class MostarPaciente extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_btVoltarActionPerformed
-
+    //Botão que Limpa os Campos
     private void btLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLimparActionPerformed
                         campoNome.setText("");
                         campoCpf.setText("");

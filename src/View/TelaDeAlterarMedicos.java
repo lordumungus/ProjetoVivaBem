@@ -31,6 +31,7 @@ public class TelaDeAlterarMedicos extends javax.swing.JFrame {
 
     /**
      * Creates new form CadastroPaciente
+     * Tela de Alterar Dados médicos
      */
     public TelaDeAlterarMedicos() {
         initComponents();
@@ -186,7 +187,7 @@ public class TelaDeAlterarMedicos extends javax.swing.JFrame {
     private void camponovoEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_camponovoEnderecoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_camponovoEnderecoActionPerformed
-
+    //Botão Mostrar dados Medicos
     private void btMostrarPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMostrarPacientesActionPerformed
      
 				
@@ -239,14 +240,14 @@ public class TelaDeAlterarMedicos extends javax.swing.JFrame {
 	}
        
     }//GEN-LAST:event_btMostrarPacientesActionPerformed
-
+ //Botão Voltar
     private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
             dispose();  
         
         
         
     }//GEN-LAST:event_btVoltarActionPerformed
-
+    //Botão Alterar dados Médicos no cadastro_medico 
     private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
     int y;
          UIManager.put("OptionPane.cancelButtonText", "Cancelar"); 
@@ -296,7 +297,7 @@ public class TelaDeAlterarMedicos extends javax.swing.JFrame {
 	   JOptionPane.showMessageDialog(null,ex.getMessage(),"Erro",JOptionPane.INFORMATION_MESSAGE);
 	}}
     }//GEN-LAST:event_btAlterarActionPerformed
-
+    //Botão que chama a Tela Deletar
     private void btDeletarMedicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDeletarMedicosActionPerformed
       DeleteMedico delete = new DeleteMedico();
       delete.show();
@@ -330,7 +331,7 @@ public class TelaDeAlterarMedicos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
-
+    //Método que chama o Icone Heart.png 
     private void setIcon() {
         URL url = this.getClass().getResource("/Imagens/heart.png");
          Image imgTitulo = Toolkit.getDefaultToolkit().getImage(url);

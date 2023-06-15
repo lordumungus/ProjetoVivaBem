@@ -16,6 +16,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author User
+ * Cadastro Paciente
  */
 public class CadastroPaciente extends javax.swing.JFrame {
     public String  nome, endereco, data, cpf,  telefone, email;
@@ -155,7 +156,7 @@ public class CadastroPaciente extends javax.swing.JFrame {
     private void campoEnderecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoEnderecoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoEnderecoActionPerformed
-
+    
     private void btCadastroPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCadastroPacienteActionPerformed
         
         nome = campoNome.getText();

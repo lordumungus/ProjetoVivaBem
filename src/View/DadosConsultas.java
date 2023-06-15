@@ -22,6 +22,7 @@ public class DadosConsultas extends javax.swing.JFrame {
 
     /**
      * Creates new form DadosMedicos
+     * Dados Consultas Tela principal
      */
     public DadosConsultas() {
         initComponents();

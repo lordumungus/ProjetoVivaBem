@@ -16,6 +16,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author User
+ * Cadastro de Novo Médico
  */
 public class CadastroDeProfissionais extends javax.swing.JFrame {
     

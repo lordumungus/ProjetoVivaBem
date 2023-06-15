@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import java.sql.PreparedStatement;
 
-
+//Tela de Login
 public class Login extends javax.swing.JFrame {
 
    
@@ -148,7 +148,7 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    //Botão que pegas as Strings do cpf email e senha
     private void btEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEntrarActionPerformed
          
     String email = campoEmail.getText();
@@ -163,8 +163,8 @@ public class Login extends javax.swing.JFrame {
         
     }else{
     
-    
-
+    //Conexão com o banco de Dados cadastro_funcionarios ou cadastro_medicos
+        
     try 
     {
         Class.forName("com.mysql.cj.jdbc.Driver");
@@ -179,7 +179,7 @@ public class Login extends javax.swing.JFrame {
     ResultSet rsMedico = stmMedico.executeQuery(queryMedico);
 
     
-    
+    //tomada de Decisão se vai para a Tela Principal ou Tela do Médico
     
     if (rsPaciente.next() || rsMedico.next()) {
         boolean a=false;
@@ -276,7 +276,7 @@ if (campoSenha.getText().isEmpty()) {
      btRecuperarSenha.setOpaque(false);
     btRecuperarSenha.setContentAreaFilled(false);
     btRecuperarSenha.setBorderPainted(false);
-        
+     //Recuperação da Senha   
     String cpf = JOptionPane.showInputDialog("Digite seu CPF:");
     String dataNascimento = JOptionPane.showInputDialog("Digite sua data de nascimento (dd/mm/aaaa):");
 
@@ -293,7 +293,7 @@ if (campoSenha.getText().isEmpty()) {
         JOptionPane.showMessageDialog(null, "Preencha todos os campos corretamente.", "Erro", JOptionPane.ERROR_MESSAGE);
     }
 }
-
+    // Atualizar Senha
 private boolean atualizarSenha(String tabela, String cpf, String dataNascimento) {
     try {
         Class.forName("com.mysql.cj.jdbc.Driver");
@@ -343,7 +343,7 @@ private boolean atualizarSenha(String tabela, String cpf, String dataNascimento)
     }
 
     }//GEN-LAST:event_btRecuperarSenhaActionPerformed
-
+    //Tela quem Somos
     private void btEntrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEntrar1ActionPerformed
         QuemSomos chamar = new QuemSomos();
         chamar.setLocationRelativeTo(null);
@@ -366,7 +366,7 @@ private boolean atualizarSenha(String tabela, String cpf, String dataNascimento)
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
-
+    //Metodo que chama o Icone
     public void setIcon() {
          URL url = this.getClass().getResource("/Imagens/heart.png");
          Image imgTitulo = Toolkit.getDefaultToolkit().getImage(url);

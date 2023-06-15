@@ -16,6 +16,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author User
+ * Cadastro Funcionários
  */
 public class CadastroFuncionarios extends javax.swing.JFrame {
     public String nome, endereco, data, cpf,  telefone, email, senha;
